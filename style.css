@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+    color: white;
+}
+
+.parent {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+    align-items: baseline;
+    /* flex-wrap: wrap; */
+    /* gap: 10px 100px; */
+}
+
+.box {
+    /* flex: 1; */
+    /* height: fit-content; */
+    /* margin: 10px; */
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
