@@ -1,37 +1,77 @@
 body {
-    background-color: aqua;
-    color: white;
+    background-color: #3b3d3d;
 }
 
-.parent {
+.master-parent {
     height: 100vh;
     display: flex;
+    margin: 10px;
+}
+
+.master-parent .left-parent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.master-parent .right-parent {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.master-parent .right-parent .top-parent {
+    flex: 1;
+    display: flex;
+    /* align-items: stretch; */
+    /* align-content: stretch; */
+}
+
+.master-parent .right-parent .bottom-parent {
+    flex: 2;
+    display: flex;
+}
+
+.master-parent .right-parent .bottom-parent .right-parent {
+    flex: 2;
+}
+
+.master-parent .right-parent .bottom-parent .left-parent {
+    flex: 3;
     flex-direction: row;
-    /* justify-content: center; */
-    align-content: center;
-    align-items: baseline;
-    /* flex-wrap: wrap; */
-    /* gap: 10px 100px; */
+    flex-wrap: wrap;
+}
+
+.master-parent,
+.right-parent,
+.left-parent,
+.bottom-parent,
+.top-parent {
+    gap: 10px;
 }
 
 .box {
-    /* flex: 1; */
-    /* height: fit-content; */
     /* margin: 10px; */
+    flex: 1;
+    /* height: 100%; */
+}
+
+.master-parent .right-parent .bottom-parent .left-parent .box {
+    flex-basis: 50%;
 }
 
 .red {
-    background-color: red;
+    background-color: #f1463d;
 }
 
-.green {
-    background-color: green;
+.white {
+    background-color: white;
 }
 
-.blue {
-    background-color: blue;
+.cyan {
+    background-color: #2cc5cf;
 }
 
-.black {
-    background-color: black;
+.yellow {
+    background-color: #d6b269;
 }
